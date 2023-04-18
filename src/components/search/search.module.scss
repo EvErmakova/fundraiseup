@@ -8,11 +8,17 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: var(--gap-10);
+        gap: var(--gap-4);
     }
 
     .search {
         flex-grow: 1;
         max-width: 336px;
+    }
+
+    @media (min-width: 768px) {
+        .card_bottom {
+            gap: var(--gap-10);
+        }
     }
 }

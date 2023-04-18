@@ -1,6 +1,6 @@
 import React from 'react';
+import {CalendarIcon, RepeatIcon, WalletIcon, XCircleIcon} from '../icon/icon';
 import styles from './menu.module.scss';
-import {CalendarIcon, RepeatIcon, WalletIcon, XCircleIcon} from "../icon/icon";
 
 function Menu() {
     return (

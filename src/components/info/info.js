@@ -1,5 +1,5 @@
 import React from 'react';
-import {CheckCircleIcon, CopyIcon, DollarIcon} from "../icon/icon";
+import {CheckCircleIcon, CopyIcon, DollarIcon} from '../icon/icon';
 import styles from './info.module.scss';
 
 function Info() {

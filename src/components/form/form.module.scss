@@ -1,0 +1,18 @@
+:root {
+    .card_bottom {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap-4);
+        background: var(--background-accent);
+    }
+
+    .content {
+        padding: var(--gap-4);
+    }
+
+    @media (min-width: 768px) {
+        .content {
+            padding: var(--gap-10) var(--gap-15);
+        }
+    }
+}

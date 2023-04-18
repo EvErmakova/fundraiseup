@@ -17,8 +17,12 @@
     --font-family-base: 'Work Sans', sans-serif;
     --font-family-secondary: 'Source Code Pro', monospace;
 
+    --font-weight-base: 400;
+    --font-weight-bold: 600;
+
     --font-size-base: 16px;
     --font-size-md: 14px;
+    --font-size-sm: 12px;
 
     --line-height-base: 1.5;
     --line-height-md: 20px;
@@ -36,9 +40,11 @@
     --gap-8: 32px;
     --gap-9: 36px;
     --gap-10: 40px;
+    --gap-15: 60px;
     --widget-width: 1224px;
 
     --border-radius-base: 8px;
+    --border-radius-sm: 6px;
 
     --transition-base: .15s ease-in-out;
 

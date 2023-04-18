@@ -22,7 +22,7 @@
     @media (min-width: 768px) {
         .widget {
             grid-template-areas: 'header header' 'body aside';
-            grid-template-columns: 1fr 264px;
+            grid-template-columns: minmax(0, 100%) 264px;
         }
 
         .aside {
