@@ -42,12 +42,15 @@
             flex-direction: row;
             align-items: flex-start;
             gap: var(--gap-4);
+
+            &.center {
+                align-items: center;
+            }
         }
 
         .label {
             flex-shrink: 0;
             flex-basis: 124px;
-            padding: var(--gap-2) 0;
             text-align: right;
         }
     }
