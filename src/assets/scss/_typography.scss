@@ -1,0 +1,37 @@
+h2, .h2 {
+    font-size: var(--h2-font-size);
+    line-height: var(h2-line-height);
+}
+
+.font-family-secondary {
+    font-family: var(--font-family-secondary);
+}
+
+.font-size-md {
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-md);
+}
+
+.line-height-md {
+    line-height: var(--line-height-md);
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.caption-color {
+    color: var(--caption-color);
+}
+
+.link-color {
+    color: var(--link-color);
+}
+
+.white-color {
+    color: var(--white);
+}
+
+.icon-color {
+    color: var(--icon-color);
+}

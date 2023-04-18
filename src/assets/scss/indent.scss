@@ -1,0 +1,17 @@
+@for $size from 1 through 10 {
+    .indent-top-#{$size} {
+        margin-top: var(--gap-#{$size});
+    }
+
+    .indent-bottom-#{$size} {
+        margin-bottom: var(--gap-#{$size});
+    }
+
+    .indent-left-#{$size} {
+        margin-left: var(--gap-#{$size});
+    }
+
+    .indent-right-#{$size} {
+        margin-right: var(--gap-#{$size});
+    }
+}

@@ -1,0 +1,14 @@
+.with-icon {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-2);
+
+    svg {
+        flex-shrink: 0;
+    }
+}
+
+.icon-size-base {
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
