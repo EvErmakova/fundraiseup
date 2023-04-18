@@ -1,0 +1,28 @@
+:root {
+    .list {
+        border-radius: var(--border-radius-base);
+        overflow: hidden;
+    }
+
+    .item {
+        &:not(:first-of-type) {
+            border-top: 1px solid var(--border-color-base);
+        }
+    }
+
+    .button {
+        width: 100%;
+        padding: var(--gap-3) var(--gap-4);
+        cursor: pointer;
+        transition: var(--transition-base);
+
+        svg {
+            flex-shrink: 0;
+        }
+
+        &:hover,
+        &:focus {
+            background: var(--background-controls);
+        }
+    }
+}

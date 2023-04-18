@@ -1,0 +1,18 @@
+:root {
+    .card_top {
+        padding-top: var(--gap-7);
+        padding-bottom: var(--gap-7);
+    }
+
+    .card_bottom {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--gap-10);
+    }
+
+    .search {
+        flex-grow: 1;
+        max-width: 336px;
+    }
+}

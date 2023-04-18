@@ -1,20 +1,21 @@
 import React from 'react';
+import Search from "../search/search";
+import Info from "../info/info";
+import Form from "../form/form";
+import Menu from "../menu/menu";
+import styles from './app.module.scss';
 
 function App() {
     return (
-        <div>
-            <div>
-                Search
+        <div className={styles.widget}>
+            <div className={styles.header}>
+                <Search />
             </div>
-            <div>
-                Menu
+            <div className={styles.aside}>
+                <Menu />
             </div>
-            <div>
-                Info
-            </div>
-            <div>
-                Form
-            </div>
+            <Info />
+            <Form />
         </div>
     );
 }
