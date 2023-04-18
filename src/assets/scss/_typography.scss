@@ -35,3 +35,13 @@ h2, .h2 {
 .icon-color {
     color: var(--icon-color);
 }
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

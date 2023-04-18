@@ -5,14 +5,25 @@
     box-shadow: 1px 3px 3px rgba(62, 63, 64, 0.1);
 
     &_top {
-        padding: var(--gap-6) var(--gap-8);
+        padding: var(--gap-4);
     }
 
     &_bottom {
-        padding: var(--gap-4) var(--gap-8);
+        padding: var(--gap-4);
         background: var(--background-secondary);
         border-top: 1px solid var(--border-color-base);
         border-bottom-left-radius: var(--border-radius-base);
         border-bottom-right-radius: var(--border-radius-base);
+    }
+
+    @media (min-width: 768px) {
+        &_top {
+            padding: var(--gap-6) var(--gap-8);
+        }
+
+        &_bottom {
+            padding-left: var(--gap-8);
+            padding-right: var(--gap-8);
+        }
     }
 }

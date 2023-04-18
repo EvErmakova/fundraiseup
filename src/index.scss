@@ -3,6 +3,7 @@
 @import "assets/scss/variables";
 
 body {
+    min-width: 320px;
     font: var(--font-size-base)/var(--line-height-base) var(--font-family-base);
     background: var(--background-base);
     color: var(--text-color);
@@ -11,4 +12,5 @@ body {
 @import "assets/scss/typography";
 @import "assets/scss/icon";
 @import "assets/scss/indent";
+@import "assets/scss/link";
 @import "assets/scss/card";
