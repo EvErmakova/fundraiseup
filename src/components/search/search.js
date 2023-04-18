@@ -1,5 +1,6 @@
 import React from 'react';
-import {ArrowDownIcon, SearchIcon} from '../icon/icon';
+import {SearchIcon} from '../icon/icon';
+import TextSelect from '../text-select/text-select';
 import styles from './search.module.scss';
 
 function Search() {
@@ -15,14 +16,12 @@ function Search() {
                     </div>
                     <input className="control_input" type="text" placeholder="Search" id="search" />
                 </div>
-                <div className="text-control">
-                    <select className="control_select" name="status" id="status" defaultValue="All statuses">
-                        <option value="All statuses">All statuses</option>
-                        <option value="Succeeded">Succeeded</option>
-                        <option value="Errored">Errored</option>
-                    </select>
-                    <ArrowDownIcon className="control_arrow" />
-                </div>
+
+                <TextSelect id="status" options={[
+                    {value: 'All statuses', text: 'All statuses'},
+                    {value: 'Succeeded', text: 'Succeeded'},
+                    {value: 'Errored', text: 'Errored'},
+                ]} />
             </div>
         </div>
     );
