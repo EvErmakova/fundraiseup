@@ -6,6 +6,7 @@
     --background-accent: #FFFBEC;
     --border-color-base: #DBDCDE;
     --border-color-form: #A9ABAE;
+    --shadow-color: rgba(#3E3F40, 0.1);
     --text-color: #2F2F30;
     --caption-color: #6C6D6F;
     --primary-color: #00A651;
@@ -50,4 +51,8 @@
     --transition-base: .15s ease-in-out;
 
     --icon-size: 18px;
+
+    --shadow-base: 1px 3px 3px rgba(62, 63, 64, 0.1);
+    --shadow-control: 0 0 6px var(--primary-color);
+    --shadow-active-btn: inset 0 0 8px 1px rgba(0, 0, 0, 0.4);
 }

@@ -30,7 +30,7 @@
 
 .range:focus::-webkit-slider-thumb,
 .range::-webkit-slider-thumb:hover {
-    box-shadow: 0 0 6px var(--primary-color);
+    box-shadow: var(--shadow-control);
 }
 
 .range::-moz-range-thumb {
@@ -44,7 +44,7 @@
 
 .range:focus::-moz-range-thumb,
 .range::-moz-range-thumb:hover {
-    box-shadow: 0 0 6px var(--primary-color);
+    box-shadow: var(--shadow-control);
 }
 
 @media (min-width: 1024px) {

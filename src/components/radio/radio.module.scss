@@ -27,7 +27,7 @@
     }
 
     &:focus {
-        box-shadow: 0 0 6px var(--primary-color);
+        box-shadow: var(--shadow-control);
     }
 
     &:checked {
@@ -37,6 +37,6 @@
     }
 
     &:focus:checked {
-        box-shadow: 0 0 6px var(--primary-color), inset 0 0 0 4px var(--white);
+        box-shadow: var(--shadow-control), inset 0 0 0 4px var(--white);
     }
 }

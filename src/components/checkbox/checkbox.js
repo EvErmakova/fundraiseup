@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import styles from './checkbox.module.scss';
 
-function Checkbox({id, value, text, selected}) {
+function Checkbox({id, name, value, text, selected}) {
     const [activeCheckbox, setActiveCheckbox] = useState(selected);
 
     return (
         <div className={styles.control}>
-            <input className={styles.checkbox} type="checkbox" id={id} value={value}
+            <input className={styles.checkbox} type="checkbox" id={id} name={name} value={value}
                    checked={activeCheckbox == true}
                    onChange={() => setActiveCheckbox(!activeCheckbox)}
             />

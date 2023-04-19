@@ -18,6 +18,58 @@
     grid-area: aside;
 }
 
+.menu_btn {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .menu_btn {
+        position: fixed;
+        right: var(--gap-3);
+        bottom: var(--gap-3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--gap-10);
+        height: var(--gap-10);
+        padding: var(--gap-1);
+        box-shadow: var(--shadow-base);
+        border-radius: var(--border-radius-base);
+        background: var(--link-color);
+        color: var(--white);
+        transition: var(--transition-base);
+        z-index: 10;
+
+        &:active {
+            box-shadow: var(--shadow-base), var(--shadow-active-btn);
+        }
+    }
+
+    .aside {
+        display: none;
+        position: fixed;
+        right: var(--gap-3);
+        bottom: calc(var(--gap-3) * 2 + var(--gap-10));
+        border-radius: var(--border-radius-base);
+        box-shadow: var(--shadow-base);
+        max-width: calc(100vw - var(--gap-3) * 2);
+        max-height: calc(100vh - var(--gap-10) - var(--gap-3) * 3);
+        z-index: 10;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &.show {
+            display: block;
+        }
+    }
+}
+
 @media (min-width: 768px) {
     .widget {
         grid-template-areas: 'header header' 'body aside';
