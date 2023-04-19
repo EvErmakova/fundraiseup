@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fundraiseup/static/css/main.85f76b91.css",
+    "main.css": "/fundraiseup/static/css/main.c7b81d06.css",
     "main.js": "/fundraiseup/static/js/main.b326366b.js",
     "index.html": "/fundraiseup/index.html",
-    "main.85f76b91.css.map": "/fundraiseup/static/css/main.85f76b91.css.map",
+    "main.c7b81d06.css.map": "/fundraiseup/static/css/main.c7b81d06.css.map",
     "main.b326366b.js.map": "/fundraiseup/static/js/main.b326366b.js.map"
   },
   "entrypoints": [
-    "static/css/main.85f76b91.css",
+    "static/css/main.c7b81d06.css",
     "static/js/main.b326366b.js"
   ]
 }
