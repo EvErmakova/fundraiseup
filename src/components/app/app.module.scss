@@ -40,6 +40,10 @@
         transition: var(--transition-base);
         z-index: 10;
 
+        svg {
+            width: 100%;
+        }
+
         &:active {
             box-shadow: var(--shadow-base), var(--shadow-active-btn);
         }
