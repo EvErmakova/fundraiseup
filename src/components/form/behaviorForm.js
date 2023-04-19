@@ -1,8 +1,10 @@
 import React from 'react';
 import Select from '../select/select';
+import Radio from '../radio/radio';
+import Checkbox from '../checkbox/checkbox';
+import Input from '../input/input';
+import Range from '../range/range';
 import styles from './form.module.scss';
-import Radio from "../radio/radio";
-import Checkbox from "../checkbox/checkbox";
 
 function BehaviorForm() {
     return (
@@ -22,9 +24,8 @@ function BehaviorForm() {
                 <div className={`${styles.group} ${styles.center}`}>
                     <label className={styles.label} htmlFor="goal">Goal</label>
                     <div className={styles.controls}>
-                        <div className="control">
-                            <input className="control_input" type="text" placeholder="$10.00" id="goal" />
-                        </div>
+                        <Input id="goal" placeholder="$10.00" />
+
                         <div className={styles.currency}>
                             <Select id="currency" options={[
                                 {value: 'USD', text: 'USD'},
@@ -52,10 +53,12 @@ function BehaviorForm() {
 
                 <div className={styles.group}>
                     <label className={styles.label}>Border size</label>
+                    <Range id="border-size" name="border-size" min="0" max="3" step="1" value="2" unit="px" />
                 </div>
 
                 <div className={styles.group}>
                     <label className={styles.label}>Border radius</label>
+                    <Range id="border-radius" name="border-radius" min="0" max="20" step="1" value="15" unit="px" />
                 </div>
             </div>
 

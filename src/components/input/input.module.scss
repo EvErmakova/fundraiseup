@@ -1,0 +1,14 @@
+:root {
+    .icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: var(--gap-4);
+        display: flex;
+
+        + .input {
+            padding-left: calc(var(--gap-4) + var(--icon-size) + var(--gap-2));
+        }
+    }
+
+}

@@ -1,0 +1,50 @@
+.control {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--gap-4);
+}
+
+.range {
+    flex-grow: 1;
+    display: block;
+    max-width: 218px;
+    height: 3px;
+    border-radius: var(--border-radius-base);
+    background-color: var(--border-color-base);
+    background-image: linear-gradient(0deg, var(--primary-color), var(--primary-color));
+    background-size: var(--percent) 100%;
+    background-repeat: no-repeat;
+    transition: background-color var(--transition-base);
+    cursor: pointer;
+}
+
+.range::-webkit-slider-thumb {
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    transition: background-color 0.15s linear;
+    appearance: none;
+}
+
+.range:focus::-webkit-slider-thumb,
+.range::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 6px var(--primary-color);
+}
+
+.range::-moz-range-thumb {
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    transition: background-color 0.15s linear;
+}
+
+.range:focus::-moz-range-thumb,
+.range::-moz-range-thumb:hover {
+    box-shadow: 0 0 6px var(--primary-color);
+}
+
