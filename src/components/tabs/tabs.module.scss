@@ -1,54 +1,52 @@
-:root {
-    .tabs {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
+.tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
-        &::-webkit-scrollbar {
-            display: none;
-        }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.list {
+    display: flex;
+    width: fit-content;
+    min-width: 100%;
+    padding: var(--gap-4) var(--gap-4) 0;
+    border-bottom: 1px solid var(--border-color-base);
+    white-space: nowrap;
+}
+
+.item {
+    position: relative;
+    margin-bottom: -1px;
+    padding: calc(var(--gap-3) + 1px) calc(var(--gap-4) - 1px) calc(var(--gap-3) - 1px);
+    border-top-left-radius: var(--border-radius-sm);
+    border-top-right-radius: var(--border-radius-sm);
+    border: 1px solid transparent;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-md);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    transition: var(--transition-base);
+
+    &:hover,
+    &:focus {
+        color: var(--primary-color);
     }
 
+    &.active {
+        background: var(--white);
+        border: 1px solid var(--border-color-base);
+        border-bottom-color: var(--white);
+        color: var(--primary-color);
+    }
+}
+
+@media (min-width: 768px) {
     .list {
-        display: flex;
-        width: fit-content;
-        min-width: 100%;
-        padding: var(--gap-4) var(--gap-4) 0;
-        border-bottom: 1px solid var(--border-color-base);
-        white-space: nowrap;
-    }
-
-    .item {
-        position: relative;
-        margin-bottom: -1px;
-        padding: calc(var(--gap-3) + 1px) calc(var(--gap-4) - 1px) calc(var(--gap-3) - 1px);
-        border-top-left-radius: var(--border-radius-sm);
-        border-top-right-radius: var(--border-radius-sm);
-        border: 1px solid transparent;
-        font-size: var(--font-size-sm);
-        line-height: var(--line-height-md);
-        font-weight: var(--font-weight-bold);
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        transition: var(--transition-base);
-
-        &:hover,
-        &:focus {
-            color: var(--primary-color);
-        }
-
-        &.active {
-            background: var(--white);
-            border: 1px solid var(--border-color-base);
-            border-bottom-color: var(--white);
-            color: var(--primary-color);
-        }
-    }
-
-    @media (min-width: 768px) {
-        .list {
-            padding: var(--gap-8) var(--gap-6) 0;
-        }
+        padding: var(--gap-8) var(--gap-6) 0;
     }
 }

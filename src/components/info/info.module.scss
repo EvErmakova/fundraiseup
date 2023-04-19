@@ -1,60 +1,60 @@
-:root {
-    .card_top {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: var(--gap-4);
-    }
+.top,
+.bottom {
+    display: flex;
+    gap: var(--gap-4);
+}
 
-    .card_bottom {
-        display: flex;
-        flex-direction: column;
-        gap: var(--gap-4);
-    }
+.top {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-    .prices {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        gap: var(--gap-2);
+.bottom {
+    flex-direction: column;
+}
+
+.prices {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--gap-2);
+}
+
+.item {
+    overflow: hidden;
+
+    &:first-of-type {
+        flex-shrink: 0;
+    }
+}
+
+.item_title {
+    margin-bottom: 2px;
+}
+
+.id {
+    transition: var(--transition-base);
+
+    &:hover,
+    &:focus {
+        color: var(--link-color);
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px), (min-width: 1024px) {
+    .bottom {
+        flex-direction: row;
+        gap: 0;
     }
 
     .item {
-        overflow: hidden;
-
-        &:first-of-type {
-            flex-shrink: 0;
-        }
-    }
-
-    .item_title {
-        margin-bottom: 2px;
-    }
-
-    .id {
-        transition: var(--transition-base);
-
-        &:hover,
-        &:focus {
-            color: var(--link-color);
-        }
-    }
-
-    @media (min-width: 640px) and (max-width: 767px), (min-width: 1024px) {
-        .card_bottom {
-            flex-direction: row;
-            gap: 0;
+        &:not(:last-of-type) {
+            padding-right: var(--gap-8);
         }
 
-        .item {
-            &:not(:last-of-type) {
-                padding-right: var(--gap-8);
-            }
-
-            &:not(:first-of-type) {
-                padding-left: var(--gap-8);
-                border-left: 1px solid var(--border-color-base);
-            }
+        &:not(:first-of-type) {
+            padding-left: var(--gap-8);
+            border-left: 1px solid var(--border-color-base);
         }
     }
 }

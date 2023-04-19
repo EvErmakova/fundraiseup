@@ -1,60 +1,72 @@
-:root {
-    .card_bottom {
-        display: flex;
-        flex-wrap: wrap;
-        gap: var(--gap-4);
-        background: var(--background-accent);
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-4);
+    padding: var(--gap-4);
+    border-top: 1px solid var(--border-color-base);
+    border-bottom-left-radius: var(--border-radius-base);
+    border-bottom-right-radius: var(--border-radius-base);
+    background: var(--background-accent);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-6);
+    padding: var(--gap-4);
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-3);
+}
+
+.controls {
+    flex-grow: 1;
+    display: flex;
+    gap: var(--gap-6);
+}
+
+.currency {
+    flex-shrink: 0;
+    width: auto;
+}
+
+@media (min-width: 768px) {
+    .content {
+        padding: var(--gap-8);
     }
 
+    .bottom {
+        padding-left: var(--gap-8);
+        padding-right: var(--gap-8);
+    }
+}
+
+@media (min-width: 1024px) {
     .content {
-        display: flex;
-        flex-direction: column;
-        gap: var(--gap-6);
-        padding: var(--gap-4);
+        max-width: 606px;
+        padding: var(--gap-10) var(--gap-15);
     }
 
     .group {
-        display: flex;
-        flex-direction: column;
-        gap: var(--gap-3);
+        flex-direction: row;
+        align-items: flex-start;
+        gap: var(--gap-4);
 
-        .center {}
+        &.center {
+            align-items: center;
+        }
     }
 
-    .label {}
+    .label {
+        flex-shrink: 0;
+        flex-basis: 124px;
+        text-align: right;
+    }
 
     .controls {
-        flex-grow: 1;
         max-width: 296px;
-        display: flex;
-        gap: var(--gap-6);
-    }
-
-    .currency {
-        flex-shrink: 0;
-        width: auto;
-    }
-
-    @media (min-width: 1024px) {
-        .content {
-            max-width: 606px;
-            padding: var(--gap-10) var(--gap-15);
-        }
-
-        .group {
-            flex-direction: row;
-            align-items: flex-start;
-            gap: var(--gap-4);
-
-            &.center {
-                align-items: center;
-            }
-        }
-
-        .label {
-            flex-shrink: 0;
-            flex-basis: 124px;
-            text-align: right;
-        }
     }
 }

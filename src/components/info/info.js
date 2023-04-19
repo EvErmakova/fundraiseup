@@ -1,11 +1,13 @@
 import React from 'react';
+import Card from '../card/card';
 import {CheckCircleIcon, CopyIcon, DollarIcon} from '../icon/icon';
+import Link from '../link/link';
 import styles from './info.module.scss';
 
 function Info() {
     return (
-        <div className="card">
-            <div className={`card_top ${styles.card_top}`}>
+        <Card>
+            <div className={styles.top}>
                 <div>
                     <div className="with-icon">
                         <DollarIcon className="icon-size-base icon-color" />
@@ -25,7 +27,8 @@ function Info() {
                     </button>
                 </div>
             </div>
-            <div className={`card_bottom ${styles.card_bottom}`}>
+
+            <div className={styles.bottom}>
                 <div className={styles.item}>
                     <div className={`font-size-md caption-color ${styles.item_title}`}>Status</div>
                     <div className="with-icon primary-color">
@@ -36,17 +39,17 @@ function Info() {
                 <div className={styles.item}>
                     <div className={`font-size-md caption-color ${styles.item_title}`}>Supporter</div>
                     <div className="text-truncate">
-                        <a className="link" href="#" target="_blank" title="Charlotte Ann">Charlotte Ann</a>
+                        <Link href="#" text="Charlotte Ann" />
                     </div>
                 </div>
                 <div className={styles.item}>
                     <div className={`font-size-md caption-color ${styles.item_title}`}>Campaign</div>
                     <div className="text-truncate">
-                        <a className="link" href="#" target="_blank" title="Heart walk">Heart walk</a>
+                        <Link href="#" text="Heart walk" />
                     </div>
                 </div>
             </div>
-        </div>
+        </Card>
     );
 }
 

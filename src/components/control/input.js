@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './input.module.scss';
+import styles from './control.module.scss';
 
 function Input({id, placeholder, ...props}) {
     return (
-        <div className="control">
+        <div className={styles.control}>
             {props.children && <div className={styles.icon}>{props.children}</div>}
-            <input className={`control_input ${styles.input}`} type="text" placeholder={placeholder} id={id} />
+            <input className={styles.input} type="text" placeholder={placeholder} id={id} />
         </div>
     );
 }

@@ -6,7 +6,7 @@
     background: var(--white);
 }
 
-.control_input {
+.input {
     position: relative;
     width: 100%;
     padding: var(--gap-2) var(--gap-3);
@@ -24,14 +24,50 @@
     }
 }
 
-.control_icon {
+.icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: var(--gap-4);
     display: flex;
 
-    + .control_input {
+    + .input {
         padding-left: calc(var(--gap-4) + var(--icon-size) + var(--gap-2));
     }
 }
+
+.select {
+    padding-right: calc(var(--gap-8) + 2px);
+    cursor: pointer;
+}
+
+.arrow {
+    left: auto;
+    right: var(--gap-3);
+    width: 10px;
+    height: 6px;
+    color: var(--caption-color);
+}
+
+.text_control {
+    position: relative;
+
+    .arrow {
+        right: 0;
+        color: var(--text-color);
+    }
+}
+
+.text_select {
+    position: relative;
+    padding-right: calc(var(--gap-2) + 10px);
+    transition: var(--transition-base);
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover,
+    &:focus {
+        color: var(--link-color);
+    }
+}
+

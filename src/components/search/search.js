@@ -1,16 +1,18 @@
 import React from 'react';
+import Card from '../card/card';
 import {SearchIcon} from '../icon/icon';
-import TextSelect from '../text-select/text-select';
-import Input from '../input/input';
+import TextSelect from '../control/text-select';
+import Input from '../control/input';
 import styles from './search.module.scss';
 
 function Search() {
     return (
-        <div className="card">
-            <div className={`card_top ${styles.card_top}`}>
+        <Card>
+            <div className={styles.top}>
                 <h2>Donations</h2>
             </div>
-            <div className={`card_bottom ${styles.card_bottom}`}>
+
+            <div className={styles.bottom}>
                 <div className={styles.search}>
                     <Input placeholder="Search" id="search">
                         <SearchIcon className="caption-color icon-size-base" />
@@ -23,7 +25,7 @@ function Search() {
                     {value: 'Errored', text: 'Errored'},
                 ]} />
             </div>
-        </div>
+        </Card>
     );
 }
 

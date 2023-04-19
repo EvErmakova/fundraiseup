@@ -2,7 +2,7 @@
 @import "assets/scss/fonts";
 @import "assets/scss/variables";
 
-body {
+:root {
     min-width: 320px;
     font: var(--font-size-base)/var(--line-height-base) var(--font-family-base);
     background: var(--background-base);
@@ -12,7 +12,3 @@ body {
 @import "assets/scss/typography";
 @import "assets/scss/icon";
 @import "assets/scss/indent";
-@import "assets/scss/link";
-@import "assets/scss/btn";
-@import "assets/scss/control";
-@import "assets/scss/card";

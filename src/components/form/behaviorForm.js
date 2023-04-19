@@ -1,9 +1,10 @@
 import React from 'react';
-import Select from '../select/select';
+import Input from '../control/input';
+import Select from '../control/select';
 import Radio from '../radio/radio';
 import Checkbox from '../checkbox/checkbox';
-import Input from '../input/input';
 import Range from '../range/range';
+import Button from '../button/button';
 import styles from './form.module.scss';
 
 function BehaviorForm() {
@@ -62,9 +63,9 @@ function BehaviorForm() {
                 </div>
             </div>
 
-            <div className={`card_bottom ${styles.card_bottom}`}>
-                <button className="btn btn-primary" type="submit">Save changes</button>
-                <button className="btn" type="reset">Cancel</button>
+            <div className={styles.bottom}>
+                <Button type="submit" text="Save changes" color="primary" />
+                <Button type="reset" text="Cancel" />
             </div>
         </form>
     );

@@ -1,11 +1,12 @@
 import React from 'react';
-import {Tabs, Panel} from "../tabs/tabs";
+import Card from '../card/card';
+import {Tabs, Panel} from '../tabs/tabs';
+import BehaviorForm from './behaviorForm';
 import styles from './form.module.scss';
-import BehaviorForm from "./behaviorForm";
 
 function Form() {
     return (
-        <div className="card">
+        <Card>
             <Tabs>
                 <Panel title="Behavior">
                     <BehaviorForm />
@@ -35,7 +36,7 @@ function Form() {
                     </div>
                 </Panel>
             </Tabs>
-        </div>
+        </Card>
     );
 }
 

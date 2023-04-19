@@ -1,10 +1,11 @@
 import React from 'react';
+import Card from '../card/card';
 import {CalendarIcon, RepeatIcon, WalletIcon, XCircleIcon} from '../icon/icon';
 import styles from './menu.module.scss';
 
 function Menu() {
     return (
-        <div className="card">
+        <Card>
             <ul className={styles.list}>
                 <li className={styles.item}>
                     <button type="button" className={`with-icon ${styles.button}`}>
@@ -31,7 +32,7 @@ function Menu() {
                     </button>
                 </li>
             </ul>
-        </div>
+        </Card>
     );
 }
 
