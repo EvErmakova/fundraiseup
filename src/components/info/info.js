@@ -5,6 +5,10 @@ import Link from '../link/link';
 import styles from './info.module.scss';
 
 function Info() {
+    const copyText = (text) => {
+        navigator.clipboard.writeText(text);
+    }
+
     return (
         <Card>
             <div className={styles.top}>
@@ -21,7 +25,9 @@ function Info() {
 
                 <div className="font-family-secondary">
                     <div className="caption-color line-height-md">ID</div>
-                    <button type="button" className={`indent-top-1 with-icon ${styles.id}`}>
+                    <button type="button" className={`indent-top-1 with-icon ${styles.id}`}
+                            onClick={() => copyText('TYNY694Y')}
+                    >
                         <span>TYNY694Y</span>
                         <CopyIcon className="icon-size-base caption-color" />
                     </button>
