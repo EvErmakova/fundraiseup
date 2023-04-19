@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fundraise-up/static/css/main.132fbd13.css",
+    "main.js": "/fundraise-up/static/js/main.b326366b.js",
+    "index.html": "/fundraise-up/index.html",
+    "main.132fbd13.css.map": "/fundraise-up/static/css/main.132fbd13.css.map",
+    "main.b326366b.js.map": "/fundraise-up/static/js/main.b326366b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.132fbd13.css",
+    "static/js/main.b326366b.js"
+  ]
+}
