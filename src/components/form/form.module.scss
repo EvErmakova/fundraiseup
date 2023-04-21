@@ -33,6 +33,10 @@
     width: auto;
 }
 
+.label {
+    min-width: 0;
+}
+
 @media (min-width: 768px) {
     .content {
         padding: var(--gap-8);
